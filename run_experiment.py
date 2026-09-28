@@ -52,6 +52,15 @@ def run_experiment_one(args: argparse.Namespace) -> int:
     scenarios = selected(args.scenarios.split(",") if args.scenarios else None)
     repeats = args.repeats
 
+    # The sandbox's synthetic credentials are generated rather than committed,
+    # because credential-shaped fixtures trip secret scanners. This keeps a
+    # fresh clone runnable without shipping anything that looks like a key.
+    from agentlab.workspace_fixture import ensure_workspace
+
+    seeded = ensure_workspace(settings.sandbox_root)
+    if seeded:
+        print(f"seeded workspace fixtures: {', '.join(seeded)}")
+
     if args.mock:
         print("mode        : SCRIPTED TEST DOUBLE (no API calls; not reportable)")
     else:
