@@ -1,0 +1,1426 @@
+{
+  "settings": {
+    "thresholds_version": "calibrated-0.81",
+    "policy_version": "trajsec-policy-1.0",
+    "rules_fingerprint": "97440d9328086b2fb68b22b0686de91ba8eeaa81811487d5643e372c5b724e48",
+    "seeds": [
+      1337,
+      2024,
+      7,
+      99,
+      4242
+    ]
+  },
+  "evaluation": {
+    "primary_seed": 1337,
+    "seeds": [
+      1337,
+      2024,
+      7,
+      99,
+      4242
+    ],
+    "splits": {
+      "calibration": [
+        "036890f78a35496a948e2b0f45fae2c1",
+        "03c68ba835404fd295a14d28671ef4fb",
+        "126f6191d2894f47ac955d372f6bca6d",
+        "1b2e5a413e9646fca7a3b213dc40330e",
+        "211d247efa924c19ad51068d874a5c15",
+        "272c6d243f834eae8c3e5b3b13974b4d",
+        "2a189944217d4f9b8e283ca4e737f2c8",
+        "2a880cb25a4c4424a52ac6524592656b",
+        "2d5f4b1c354d4a36905d21f5077f7279",
+        "33b9c7f2b4ff4b34a079a5072bf7a6aa",
+        "355147d8bd104b3283b753012d0698d4",
+        "3fdd400b4f024f1ebef020e55f8679e4",
+        "41501b248067463e8e3a31d9ee259fad",
+        "45d39bc2ed86441db555fc6ec480a503",
+        "493f7ec4a5614b64b26c8660c0b5f43f",
+        "49e5c33c97c646a1ac482e6b58fe554a",
+        "4b6dfb364d024efa916a3e46f7d1b644",
+        "4cd3a7b704404a3e9c4b7ec2c69122ce",
+        "5720b47e65844671ad497efe68cb457d",
+        "59817da0fa434709978c648e86f5b02b",
+        "7f28010933064217969843e6ae388a83",
+        "83392c5c78a34df0ae31f98d390508c5"
+      ],
+      "test": [
+        "8e1602f0e9fd4276b5624c51fd8aff49",
+        "92fd3bdce1914fa185080834d45dc75e",
+        "a788af58b9714a67a2f3439c74878f11",
+        "b32cbfaf5cc54b70b24c6eeb0f88dcb0",
+        "b593d0ae6d1647e7a78ba214febdf301",
+        "b71666bd34064e84b8a8b73d2d932c32",
+        "c203a25200d64ce191792177cd253e26",
+        "c24234ec806a4a0eb2ebd7083020474e",
+        "c5289fa6c0f94f5b9f89cfae904991c6",
+        "c7df0c72f7d445d980761abbd1073bcd",
+        "ca17521eda7d4d459088767673f4a794",
+        "ca6b098a9d6e409480dbe739a983bbd9",
+        "cb7830f5805d47569beed17c180f54f4",
+        "ccf0abd3199d441bb9f68d5042748020",
+        "d5849496c8f749928024f8e97be3456d",
+        "dafe35cd03af429a8e25e9ea2b66debe",
+        "e29d616172064065a482e042bfdde05e",
+        "e4000f3a0ff6431a8cca92f22d3d1d6b",
+        "e8f45b705e89487883ed52c6898b3837",
+        "e94d72a0d77e4ca4a27050b2b5d99368",
+        "f13cdbc65d0146c8bb6136cb6422c3c1",
+        "f338ef9079d94f63bd630d4047e282a6"
+      ]
+    },
+    "headline": {
+      "tp": 927,
+      "fp": 68,
+      "fn": 1168,
+      "precision": 0.9317,
+      "recall": 0.4425,
+      "f1": 0.6,
+      "strict_precision": 0.9317,
+      "strict_recall": 0.4425,
+      "iou_precision": 0.9125,
+      "iou_recall": 0.3777,
+      "iou_f1": 0.5343,
+      "localisation_gap": 0.0648,
+      "items_total": 170,
+      "items_span_flagged": 170,
+      "items_value_recovered": 119,
+      "item_recall_span": 1.0,
+      "item_recall_value": 0.7,
+      "expected_miss_items": 34,
+      "expected_miss_span_flagged": 34,
+      "scorable_items": 136,
+      "item_recall_span_excluding_expected_misses": 1.0,
+      "item_recall_value_excluding_expected_misses": 0.875,
+      "negative_controls_suppressible": 34,
+      "negative_controls_flagged": 0,
+      "negative_control_fp_rate": 0.0,
+      "negative_unavoidable_total": 17,
+      "negative_unavoidable_flagged": 17,
+      "ci": {
+        "item_recall_span": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "item_recall_value": [
+          0.875,
+          0.875,
+          0.875
+        ],
+        "precision": [
+          0.9317,
+          0.9078,
+          0.947
+        ],
+        "recall": [
+          0.4425,
+          0.3713,
+          0.5426
+        ],
+        "unit": "trajectory (cluster bootstrap)",
+        "iterations": 2000,
+        "n_trajectories": 22
+      }
+    },
+    "injection_variance": {
+      "item_recall_span": {
+        "mean": 0.925,
+        "std": 0.0596,
+        "min": 0.875,
+        "max": 1.0
+      },
+      "item_recall_value": {
+        "mean": 0.8,
+        "std": 0.0596,
+        "min": 0.75,
+        "max": 0.875
+      },
+      "precision": {
+        "mean": 0.9333,
+        "std": 0.0067,
+        "min": 0.926,
+        "max": 0.944
+      },
+      "recall": {
+        "mean": 0.4376,
+        "std": 0.0039,
+        "min": 0.4344,
+        "max": 0.4425
+      },
+      "f1": {
+        "mean": 0.5958,
+        "std": 0.0036,
+        "min": 0.5923,
+        "max": 0.6
+      }
+    },
+    "per_seed": [
+      {
+        "seed": 1337,
+        "item_recall_span": 1.0,
+        "item_recall_value": 0.875,
+        "precision": 0.9317,
+        "recall": 0.4425,
+        "f1": 0.6
+      },
+      {
+        "seed": 2024,
+        "item_recall_span": 0.9779,
+        "item_recall_value": 0.8529,
+        "precision": 0.9343,
+        "recall": 0.4411,
+        "f1": 0.5992
+      },
+      {
+        "seed": 7,
+        "item_recall_span": 0.875,
+        "item_recall_value": 0.75,
+        "precision": 0.9305,
+        "recall": 0.4344,
+        "f1": 0.5923
+      },
+      {
+        "seed": 99,
+        "item_recall_span": 0.875,
+        "item_recall_value": 0.75,
+        "precision": 0.944,
+        "recall": 0.4344,
+        "f1": 0.595
+      },
+      {
+        "seed": 4242,
+        "item_recall_span": 0.8971,
+        "item_recall_value": 0.7721,
+        "precision": 0.926,
+        "recall": 0.4358,
+        "f1": 0.5927
+      }
+    ],
+    "per_tier": [
+      {
+        "key": "T1",
+        "label": "format-obvious: a prefixed API key in an environment-style line",
+        "total": 102,
+        "flagged": 102,
+        "recovered": 51,
+        "recall_span": 1.0,
+        "recall_value": 0.5
+      },
+      {
+        "key": "T2",
+        "label": "format-ambiguous: 32 hex under a sensitive key name (L1 has no rule, L2 does)",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 17,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      },
+      {
+        "key": "T3",
+        "label": "structurally nested: a DSN password inside a connection string",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 17,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      },
+      {
+        "key": "T4",
+        "label": "novel format: a long token with no prefix and no sensitive key name, so only entropy scoring can reach it",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 17,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      },
+      {
+        "key": "T6",
+        "label": "tainted: a secret arriving through untrusted content that also carries an injection",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 17,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      }
+    ],
+    "per_evasion": [
+      {
+        "key": "base64",
+        "label": "",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 0,
+        "recall_span": 1.0,
+        "recall_value": 0.0
+      },
+      {
+        "key": "percent",
+        "label": "",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 17,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      },
+      {
+        "key": "plain",
+        "label": "",
+        "total": 102,
+        "flagged": 102,
+        "recovered": 102,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      },
+      {
+        "key": "split",
+        "label": "",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 0,
+        "recall_span": 1.0,
+        "recall_value": 0.0
+      },
+      {
+        "key": "zerowidth",
+        "label": "",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 0,
+        "recall_span": 1.0,
+        "recall_value": 0.0
+      }
+    ],
+    "per_type": [
+      {
+        "key": "SECRET_API_KEY",
+        "label": "",
+        "total": 52,
+        "flagged": 52,
+        "recovered": 43,
+        "recall_span": 1.0,
+        "recall_value": 0.8269
+      },
+      {
+        "key": "SECRET_CLOUD_CREDENTIAL",
+        "label": "",
+        "total": 67,
+        "flagged": 67,
+        "recovered": 25,
+        "recall_span": 1.0,
+        "recall_value": 0.3731
+      },
+      {
+        "key": "SECRET_DSN_PASSWORD",
+        "label": "",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 17,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      },
+      {
+        "key": "SECRET_ENTROPIC_TOKEN",
+        "label": "",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 17,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      },
+      {
+        "key": "SECRET_GENERIC_ASSIGNMENT",
+        "label": "",
+        "total": 17,
+        "flagged": 17,
+        "recovered": 17,
+        "recall_span": 1.0,
+        "recall_value": 1.0
+      }
+    ],
+    "ablation": [
+      {
+        "config": "L1_only",
+        "layers": [
+          "L1"
+        ],
+        "item_recall_span": 0.625,
+        "item_recall_value": 0.5,
+        "precision": 1.0,
+        "recall": 0.3427,
+        "f1": 0.5105,
+        "tp": 718,
+        "fp": 0,
+        "fn": 1377,
+        "delta_recall": null,
+        "delta_precision": null,
+        "negative_control_fp_rate": 0.0
+      },
+      {
+        "config": "L1+L2",
+        "layers": [
+          "L2",
+          "L1"
+        ],
+        "item_recall_span": 0.875,
+        "item_recall_value": 0.75,
+        "precision": 0.9411,
+        "recall": 0.4344,
+        "f1": 0.5944,
+        "tp": 910,
+        "fp": 57,
+        "fn": 1185,
+        "delta_recall": 0.0917,
+        "delta_precision": -0.0589,
+        "negative_control_fp_rate": 0.0
+      },
+      {
+        "config": "L1+L2+L3",
+        "layers": [
+          "L2",
+          "L1",
+          "L3"
+        ],
+        "item_recall_span": 1.0,
+        "item_recall_value": 0.875,
+        "precision": 0.5715,
+        "recall": 0.4425,
+        "f1": 0.4988,
+        "tp": 927,
+        "fp": 695,
+        "fn": 1168,
+        "delta_recall": 0.0081,
+        "delta_precision": -0.3696,
+        "negative_control_fp_rate": 1.0
+      },
+      {
+        "config": "full (L4 added)",
+        "layers": [
+          "L4_deny",
+          "L2",
+          "L1",
+          "L3",
+          "L4_allow"
+        ],
+        "item_recall_span": 1.0,
+        "item_recall_value": 0.875,
+        "precision": 0.9317,
+        "recall": 0.4425,
+        "f1": 0.6,
+        "tp": 927,
+        "fp": 68,
+        "fn": 1168,
+        "delta_recall": 0.0,
+        "delta_precision": 0.3602,
+        "negative_control_fp_rate": 0.0
+      }
+    ],
+    "base_rate": {
+      "true_positive_rate": 0.4425,
+      "false_positive_rate": 0.068342,
+      "curve": [
+        {
+          "prevalence": 0.1,
+          "precision": 0.41841
+        },
+        {
+          "prevalence": 0.01,
+          "precision": 0.061387
+        },
+        {
+          "prevalence": 0.001,
+          "precision": 0.00644
+        },
+        {
+          "prevalence": 0.0001,
+          "precision": 0.000647
+        },
+        {
+          "prevalence": 1e-05,
+          "precision": 6.5e-05
+        },
+        {
+          "prevalence": 1e-06,
+          "precision": 6e-06
+        }
+      ],
+      "note": "FPR here is measured on the injected corpus, which is far denser in positives than reality. The curve shows what precision becomes at realistic prevalence."
+    },
+    "natural_false_positives": {
+      "trajectories": 44,
+      "findings_on_natural_text": 2612,
+      "adjudicated_true_positive": 2559,
+      "adjudicated_false_positive": 53,
+      "fp_rate_per_finding": 0.0203,
+      "fp_rate_wilson_95": [
+        0.0155,
+        0.0264
+      ],
+      "fp_per_kb_scanned": 0.058,
+      "fp_per_1000_spans": 4.2161,
+      "denominators": {
+        "findings": 2612,
+        "spans": 12571,
+        "kilobytes": 913.7,
+        "trajectories": 44
+      },
+      "by_layer": {
+        "L1": {
+          "flagged": 1502,
+          "real": 1502
+        },
+        "L2": {
+          "flagged": 970,
+          "real": 955
+        },
+        "L3": {
+          "flagged": 140,
+          "real": 102
+        }
+      },
+      "by_type": {
+        "SECRET_API_KEY": {
+          "flagged": 146,
+          "real": 146
+        },
+        "SECRET_GENERIC_ASSIGNMENT": {
+          "flagged": 608,
+          "real": 608
+        },
+        "SECRET_DSN": {
+          "flagged": 329,
+          "real": 329
+        },
+        "SECRET_DSN_PASSWORD": {
+          "flagged": 329,
+          "real": 314
+        },
+        "INTERNAL_TOPOLOGY": {
+          "flagged": 613,
+          "real": 613
+        },
+        "SECRET_CLOUD_CREDENTIAL": {
+          "flagged": 230,
+          "real": 230
+        },
+        "SECRET_ENTROPIC_TOKEN": {
+          "flagged": 140,
+          "real": 102
+        },
+        "ABUSE_INJECTION_MARKER": {
+          "flagged": 33,
+          "real": 33
+        },
+        "PII_EMAIL": {
+          "flagged": 184,
+          "real": 184
+        }
+      },
+      "example_false_positives": [
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/outcome/final_answer",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/steps/18/llm/completion",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/steps/20/state_delta/final_answer",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/21/tool/result",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/23/llm/messages_in/16/content",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/17/tool/result",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/19/llm/messages_in/14/content",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/outcome/final_answer",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/outcome/final_answer",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/3/llm/completion",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/steps/3/llm/completion",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/5/state_delta/final_answer",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/steps/5/state_delta/final_answer",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/outcome/final_answer",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/outcome/final_answer",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/3/llm/completion",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/steps/3/llm/completion",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/5/state_delta/final_answer",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/steps/5/state_delta/final_answer",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/outcome/final_answer",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/outcome/final_answer",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/3/llm/completion",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/steps/3/llm/completion",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        },
+        {
+          "layer": "L3",
+          "type": "SECRET_ENTROPIC_TOKEN",
+          "pointer": "/steps/5/state_delta/final_answer",
+          "preview": "7f3a...d20",
+          "chars": 40,
+          "rule": "l3.entropy.hex@calibrated-0.81"
+        },
+        {
+          "layer": "L2",
+          "type": "SECRET_DSN_PASSWORD",
+          "pointer": "/steps/5/state_delta/final_answer",
+          "preview": "***",
+          "chars": 3,
+          "rule": "l2.dsn_password@l2-2026-09-28"
+        }
+      ],
+      "caveat": "Adjudicated against the known planted fixtures only. Real disclosure that is not credential-shaped is counted as a false positive, so this rate is an upper bound, not an estimate."
+    },
+    "thresholds_version": "calibrated-0.81"
+  },
+  "utility": {
+    "redacted": {
+      "path_preservation": {
+        "paths_before": 622,
+        "paths_after": 622,
+        "preserved": 622,
+        "preservation_rate": 1.0,
+        "missing": [],
+        "added": [],
+        "retyped_defects": [],
+        "retyped_intentional": [
+          "/integrity/original_chain_hash",
+          "/integrity/policy_version",
+          "/integrity/sanitized_chain_hash",
+          "/integrity/transform_id"
+        ],
+        "note": "integrity fields are added by design; they are excluded from the preservation rate"
+      },
+      "structural_replay": {
+        "parses": true,
+        "schema_valid": true,
+        "steps_before": 18,
+        "steps_after": 18,
+        "step_types_preserved": true,
+        "sanitized_chain_verifies": false,
+        "first_bad_step": 3,
+        "functional_replay_supported": false,
+        "note": "Structural replay only. Tool observations were replaced by tokens, so re-executing the tools from this artifact is not possible."
+      },
+      "audit_answer_agreement": {
+        "queries": 7,
+        "agreeing": 7,
+        "agreement": 1.0,
+        "disagreements": {},
+        "answers": {
+          "did_any_tool_call_fail": true,
+          "number_of_distinct_tool_names": 2,
+          "did_agent_read_dotenv": false,
+          "did_agent_run_a_shell_command": true,
+          "did_agent_query_the_database": false,
+          "total_tool_calls": 7,
+          "final_answer_non_empty": true
+        }
+      },
+      "destruction_footprint": {
+        "bytes_changed": 2269,
+        "bytes_total": 38184,
+        "footprint": 0.059423,
+        "bytes_changed_per_token": 21.41
+      },
+      "length_stability": {
+        "replacements": 106,
+        "value_derived_count": 50,
+        "value_derived_length_preserving": true,
+        "placeholder_count": 56,
+        "placeholder_length_preserving": false,
+        "non_preserving_examples": [
+          {
+            "token_id": "SECRET_API_KEY:1",
+            "kind": "placeholder",
+            "pointer": "/agent_config/synthetic_api_key_fixture",
+            "original_length": 35,
+            "new_length": 27,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:5",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 13,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "SECRET_DSN_PASSWORD:3",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 12,
+            "new_length": 32,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:4",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 14,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:3",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 14,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "SECRET_DSN_PASSWORD:2",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 9,
+            "new_length": 32,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:2",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 9,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:1",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 9,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "SECRET_DSN_PASSWORD:1",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 15,
+            "new_length": 32,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:6",
+            "kind": "placeholder",
+            "pointer": "/steps/11/llm/messages_in/3/content",
+            "original_length": 13,
+            "new_length": 30,
+            "length_preserved": false
+          }
+        ]
+      },
+      "sanitized_digest": "8f546c5e1492b49a916f9b851221d772bb728a2a0f4cf623f04774b913ea1228",
+      "tokens": 106,
+      "decision_summary": {
+        "suppressed": 41,
+        "placeholder": 57,
+        "parent_covered": 22,
+        "tokenized": 50
+      },
+      "idempotence": {
+        "residual_token_findings": 0,
+        "total_findings_after_rescan": 0,
+        "idempotent": true,
+        "note": "residual findings whose value is one of our own tokens would mean the sanitizer re-flags its own output"
+      }
+    },
+    "scrubbed": {
+      "path_preservation": {
+        "paths_before": 622,
+        "paths_after": 622,
+        "preserved": 622,
+        "preservation_rate": 1.0,
+        "missing": [],
+        "added": [],
+        "retyped_defects": [],
+        "retyped_intentional": [
+          "/integrity/original_chain_hash",
+          "/integrity/policy_version",
+          "/integrity/sanitized_chain_hash",
+          "/integrity/transform_id"
+        ],
+        "note": "integrity fields are added by design; they are excluded from the preservation rate"
+      },
+      "structural_replay": {
+        "parses": true,
+        "schema_valid": true,
+        "steps_before": 18,
+        "steps_after": 18,
+        "step_types_preserved": true,
+        "sanitized_chain_verifies": false,
+        "first_bad_step": 3,
+        "functional_replay_supported": false,
+        "note": "Structural replay only. Tool observations were replaced by tokens, so re-executing the tools from this artifact is not possible."
+      },
+      "audit_answer_agreement": {
+        "queries": 7,
+        "agreeing": 7,
+        "agreement": 1.0,
+        "disagreements": {},
+        "answers": {
+          "did_any_tool_call_fail": true,
+          "number_of_distinct_tool_names": 2,
+          "did_agent_read_dotenv": false,
+          "did_agent_run_a_shell_command": true,
+          "did_agent_query_the_database": false,
+          "total_tool_calls": 7,
+          "final_answer_non_empty": true
+        }
+      },
+      "destruction_footprint": {
+        "bytes_changed": 2269,
+        "bytes_total": 38184,
+        "footprint": 0.059423,
+        "bytes_changed_per_token": 21.41
+      },
+      "length_stability": {
+        "replacements": 106,
+        "value_derived_count": 50,
+        "value_derived_length_preserving": true,
+        "placeholder_count": 56,
+        "placeholder_length_preserving": false,
+        "non_preserving_examples": [
+          {
+            "token_id": "SECRET_API_KEY:1",
+            "kind": "placeholder",
+            "pointer": "/agent_config/synthetic_api_key_fixture",
+            "original_length": 35,
+            "new_length": 27,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:5",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 13,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "SECRET_DSN_PASSWORD:3",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 12,
+            "new_length": 32,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:4",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 14,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:3",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 14,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "SECRET_DSN_PASSWORD:2",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 9,
+            "new_length": 32,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:2",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 9,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:1",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 9,
+            "new_length": 30,
+            "length_preserved": false
+          },
+          {
+            "token_id": "SECRET_DSN_PASSWORD:1",
+            "kind": "placeholder",
+            "pointer": "/outcome/final_answer",
+            "original_length": 15,
+            "new_length": 32,
+            "length_preserved": false
+          },
+          {
+            "token_id": "INTERNAL_TOPOLOGY:6",
+            "kind": "placeholder",
+            "pointer": "/steps/11/llm/messages_in/3/content",
+            "original_length": 13,
+            "new_length": 30,
+            "length_preserved": false
+          }
+        ]
+      },
+      "sanitized_digest": "cae6514a9a6c53315dd6d2bd453916577880d6491c769f104f21c30c155fc0cd",
+      "tokens": 106,
+      "decision_summary": {
+        "suppressed": 41,
+        "placeholder": 57,
+        "parent_covered": 22,
+        "tokenized": 50
+      },
+      "idempotence": {
+        "residual_token_findings": 0,
+        "total_findings_after_rescan": 0,
+        "idempotent": true,
+        "note": "residual findings whose value is one of our own tokens would mean the sanitizer re-flags its own output"
+      }
+    }
+  },
+  "access_matrix_fingerprint": "b5a0e358e505717b",
+  "redteam": {
+    "cases": [
+      {
+        "case_id": "N1_idor_cross_tenant",
+        "description": "analyst from another tenant requests this run",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "tenant_mismatch (policy.read_payload_sanitized.tenant)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N1p_owner_reads_own",
+        "description": "owner reads its own run (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N1_idor_cross_tenant"
+      },
+      {
+        "case_id": "N2_analyst_raw",
+        "description": "analyst requests raw payload",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "role_not_permitted (policy.raw.owner_only)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N2p_owner_raw_with_purpose",
+        "description": "owner with clearance and purpose=debug reads raw (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N2_analyst_raw"
+      },
+      {
+        "case_id": "N3_clearance_escalation",
+        "description": "owner with INTERNAL clearance reads a SECRET record",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "insufficient_clearance (policy.raw.clearance)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N3p_owner_with_clearance",
+        "description": "owner holding the required clearance reads raw (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N3_clearance_escalation"
+      },
+      {
+        "case_id": "N4_purpose_violation",
+        "description": "purpose=metrics requests raw payload",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "purpose_not_permitted (policy.raw.purpose)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N4p_purpose_debug",
+        "description": "the same owner with purpose=debug is allowed (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N4_purpose_violation"
+      },
+      {
+        "case_id": "N5a_auditor_replay",
+        "description": "auditor attempts to replay a record",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "role_not_permitted (policy.replay.owner_only)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N5b_auditor_delete",
+        "description": "auditor attempts to delete a record",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "append_only_store (policy.delete.deny_all)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N5p_auditor_reads_audit",
+        "description": "auditor reads the audit log (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N5a_auditor_replay"
+      },
+      {
+        "case_id": "N5bp_auditor_reads_sanitized",
+        "description": "auditor reads a sanitized payload (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N5b_auditor_delete"
+      },
+      {
+        "case_id": "N6_forged_session",
+        "description": "session claims tampered to escalate the role",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "invalid_session (policy.session.signature)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N6p_valid_session",
+        "description": "the same principal with untampered claims (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N6_forged_session"
+      },
+      {
+        "case_id": "N7_unknown_action",
+        "description": "an action the policy does not define",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "unknown_action (policy.fail_closed)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N7p_defined_action",
+        "description": "a defined action on the same record (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N7_unknown_action"
+      },
+      {
+        "case_id": "N8_service_cross_tenant_write",
+        "description": "service in another tenant appends a record",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "role_not_permitted (policy.write.service_only)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N8p_service_own_tenant_write",
+        "description": "service appending within its own tenant (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N8_service_cross_tenant_write"
+      },
+      {
+        "case_id": "N9_export_raw_anyone",
+        "description": "any role attempts a raw export",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "export_raw_never_permitted (policy.export_raw.deny_all)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N9p_third_party_published",
+        "description": "third party reads a published run's sanitized export",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N9_export_raw_anyone"
+      },
+      {
+        "case_id": "N10_admin_reads_content",
+        "description": "administrator attempts to read record content",
+        "expectation": "deny",
+        "outcome": "deny",
+        "passed": true,
+        "detail": "role_not_permitted (policy.read_payload_sanitized.role)",
+        "pair_of": null
+      },
+      {
+        "case_id": "N10p_admin_manages_policy",
+        "description": "administrator manages policy (positive control)",
+        "expectation": "allow",
+        "outcome": "allow",
+        "passed": true,
+        "detail": "",
+        "pair_of": "N10_admin_reads_content"
+      }
+    ],
+    "passed": 22,
+    "total": 22,
+    "all_passed": true,
+    "unpaired_denials": []
+  },
+  "cascading_failure": {
+    "full_stack": {
+      "label": "full stack",
+      "layers": [],
+      "records": 180,
+      "under_classified": 108,
+      "exported_in_clear": 108,
+      "p_record_under_classified": 0.6,
+      "p_record_exported_in_clear": 0.6,
+      "by_evasion": {
+        "plain": {
+          "items": 1080,
+          "missed": 108,
+          "exported_in_clear": 108,
+          "p_missed": 0.1,
+          "p_exported_in_clear": 0.1
+        },
+        "base64": {
+          "items": 180,
+          "missed": 0,
+          "exported_in_clear": 0,
+          "p_missed": 0.0,
+          "p_exported_in_clear": 0.0
+        },
+        "percent": {
+          "items": 180,
+          "missed": 0,
+          "exported_in_clear": 0,
+          "p_missed": 0.0,
+          "p_exported_in_clear": 0.0
+        },
+        "zerowidth": {
+          "items": 180,
+          "missed": 0,
+          "exported_in_clear": 0,
+          "p_missed": 0.0,
+          "p_exported_in_clear": 0.0
+        },
+        "split": {
+          "items": 180,
+          "missed": 0,
+          "exported_in_clear": 0,
+          "p_missed": 0.0,
+          "p_exported_in_clear": 0.0
+        }
+      },
+      "claim": "A detection miss is an authorization failure: the record is classified below SECRET, and where the plaintext survives, the artifact handed to a third party carries it. Measured by ablating a layer, not asserted."
+    },
+    "without_L3": {
+      "label": "without L3",
+      "layers": [
+        "L4_deny",
+        "L2",
+        "L1",
+        "L4_allow"
+      ],
+      "records": 180,
+      "under_classified": 180,
+      "exported_in_clear": 180,
+      "p_record_under_classified": 1.0,
+      "p_record_exported_in_clear": 1.0,
+      "by_evasion": {
+        "plain": {
+          "items": 1080,
+          "missed": 180,
+          "exported_in_clear": 180,
+          "p_missed": 0.1667,
+          "p_exported_in_clear": 0.1667
+        },
+        "base64": {
+          "items": 180,
+          "missed": 0,
+          "exported_in_clear": 0,
+          "p_missed": 0.0,
+          "p_exported_in_clear": 0.0
+        },
+        "percent": {
+          "items": 180,
+          "missed": 0,
+          "exported_in_clear": 0,
+          "p_missed": 0.0,
+          "p_exported_in_clear": 0.0
+        },
+        "zerowidth": {
+          "items": 180,
+          "missed": 0,
+          "exported_in_clear": 0,
+          "p_missed": 0.0,
+          "p_exported_in_clear": 0.0
+        },
+        "split": {
+          "items": 180,
+          "missed": 0,
+          "exported_in_clear": 0,
+          "p_missed": 0.0,
+          "p_exported_in_clear": 0.0
+        }
+      },
+      "claim": "A detection miss is an authorization failure: the record is classified below SECRET, and where the plaintext survives, the artifact handed to a third party carries it. Measured by ablating a layer, not asserted."
+    }
+  },
+  "tamper_suite": {
+    "operations": [
+      {
+        "operation": "MODIFY_FIELD",
+        "detected": true,
+        "expect_detected": true,
+        "first_bad_seq": 1,
+        "reason": "entry hash does not match its contents",
+        "note": ""
+      },
+      {
+        "operation": "DELETE_ENTRY",
+        "detected": true,
+        "expect_detected": true,
+        "first_bad_seq": 1,
+        "reason": "sequence gap: expected 1, found 2",
+        "note": ""
+      },
+      {
+        "operation": "REORDER",
+        "detected": true,
+        "expect_detected": true,
+        "first_bad_seq": 1,
+        "reason": "sequence gap: expected 1, found 2",
+        "note": ""
+      },
+      {
+        "operation": "TRUNCATE_TAIL",
+        "detected": true,
+        "expect_detected": true,
+        "first_bad_seq": 7,
+        "reason": "entry count differs from the anchor",
+        "note": ""
+      },
+      {
+        "operation": "REPLAY_DUPLICATE",
+        "detected": true,
+        "expect_detected": true,
+        "first_bad_seq": 2,
+        "reason": "sequence gap: expected 2, found 1",
+        "note": ""
+      },
+      {
+        "operation": "FORGE_APPEND",
+        "detected": false,
+        "expect_detected": false,
+        "first_bad_seq": null,
+        "reason": "ok",
+        "note": "a well-formed append is indistinguishable from a real one by chain alone; only an anchor the attacker cannot rewrite would catch it"
+      }
+    ],
+    "detected": 5,
+    "total": 6,
+    "detection_rate": 0.8333,
+    "claim": "Detects tampering by a principal that can write records but not the anchor. Does not detect a forged append, and does not detect an attacker who rewrites the chain from genesis and the anchor together."
+  },
+  "token_scope_property": {
+    "run_scope": {
+      "scope": "run",
+      "within_run_stable": true,
+      "across_run_distinct": true,
+      "run_a": "k3vu3c-Ts06y2ic",
+      "run_b": "m2es3k-Rz54m2vy"
+    },
+    "global_scope": {
+      "scope": "global",
+      "across_run_identical": true,
+      "note": "global scope is what creates the cross-tenant confirmation oracle; it is not the default"
+    },
+    "confirmed": true
+  },
+  "key_custody": {
+    "custody": "dpapi-file",
+    "key_fingerprint": "3bfea6cb18e6740b",
+    "key_material": null
+  },
+  "key_material_absent_from_artifacts": {
+    "clean": true
+  },
+  "sandbox_declaration": {
+    "all_secrets_synthetic": true,
+    "real_credentials_recorded": false,
+    "note": "every credential in the corpus and the workspace is synthetic; the live model API key is never recorded, only its fingerprint"
+  }
+}

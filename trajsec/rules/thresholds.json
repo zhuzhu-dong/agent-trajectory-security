@@ -1,0 +1,28 @@
+{
+  "calibration": {
+    "decision_rule": "maximise F1 over merged prediction regions; ties break toward the higher threshold",
+    "selected_f1": 0.6686,
+    "selected_precision": 0.92,
+    "selected_recall": 0.5251,
+    "split": "calibration",
+    "sweep_range": [
+      0.45,
+      0.9,
+      0.01
+    ]
+  },
+  "confidence": {
+    "L1": 0.95,
+    "L2": 0.8,
+    "L3": 0.5,
+    "L4": 0.99
+  },
+  "entropy_min_classes": 2,
+  "entropy_min_token_length": 20,
+  "entropy_normalised_threshold": 0.81,
+  "frozen": true,
+  "frozen_at": "2026-09-28",
+  "reencode_max_bytes": 4096,
+  "reencode_max_depth": 2,
+  "version": "calibrated-0.81"
+}

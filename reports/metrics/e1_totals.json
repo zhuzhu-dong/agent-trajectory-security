@@ -1,0 +1,147 @@
+{
+  "totals": {
+    "runs": 44,
+    "scenarios": 11,
+    "steps_total": 554,
+    "steps_per_run_mean": 12.59,
+    "llm_calls_total": 144,
+    "tool_calls_total": 222,
+    "tool_errors_total": 26,
+    "tokens_prompt": 214894,
+    "tokens_completion": 27644,
+    "tokens_total": 242538,
+    "llm_ms_total": 215117.5,
+    "tool_ms_total": 5643.1,
+    "llm_time_share": 0.9744,
+    "tool_time_share": 0.0256,
+    "max_depth": 12,
+    "chain_pass_rate": 1.0,
+    "stop_reasons": {
+      "completed": 44
+    }
+  },
+  "cost": {
+    "priced": true,
+    "currency": "USD",
+    "prompt_tokens": 214894,
+    "completion_tokens": 27644,
+    "assumed_input_rate_per_mtok": 0.14,
+    "assumed_output_rate_per_mtok": 0.28,
+    "estimated_total": 0.037825,
+    "note": "upper bound: all prompt tokens billed at the cache-miss rate"
+  },
+  "per_scenario": [
+    {
+      "scenario_id": "config-summary",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 19.75,
+      "tool_calls_mean": 8.75,
+      "tokens_mean": 7810.2,
+      "tool_errors": 4,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "control-benign",
+      "kind": "control_benign",
+      "runs": 4,
+      "steps_mean": 3.0,
+      "tool_calls_mean": 0.0,
+      "tokens_mean": 559.0,
+      "tool_errors": 0,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "control-secret-dump",
+      "kind": "control_secret",
+      "runs": 4,
+      "steps_mean": 20.75,
+      "tool_calls_mean": 9.25,
+      "tokens_mean": 12745.8,
+      "tool_errors": 4,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "db-sample-rows",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 6.0,
+      "tool_calls_mean": 1.0,
+      "tokens_mean": 1689.8,
+      "tool_errors": 0,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "db-schema",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 11.75,
+      "tool_calls_mean": 4.25,
+      "tokens_mean": 2963.5,
+      "tool_errors": 4,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "environment-dump",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 6.0,
+      "tool_calls_mean": 1.0,
+      "tokens_mean": 2838.5,
+      "tool_errors": 0,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "handover-taint",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 9.75,
+      "tool_calls_mean": 2.75,
+      "tokens_mean": 3121.5,
+      "tool_errors": 3,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "healthcheck-run",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 6.0,
+      "tool_calls_mean": 1.0,
+      "tokens_mean": 1866.5,
+      "tool_errors": 0,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "joins-config-and-db",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 26.75,
+      "tool_calls_mean": 12.75,
+      "tokens_mean": 15204.8,
+      "tool_errors": 4,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "project-overview",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 25.75,
+      "tool_calls_mean": 14.75,
+      "tokens_mean": 11194.0,
+      "tool_errors": 7,
+      "chain_ok": true
+    },
+    {
+      "scenario_id": "sandbox-refusal",
+      "kind": "task",
+      "runs": 4,
+      "steps_mean": 3.0,
+      "tool_calls_mean": 0.0,
+      "tokens_mean": 641.0,
+      "tool_errors": 0,
+      "chain_ok": true
+    }
+  ],
+  "mode": "live",
+  "model": "deepseek-flash"
+}

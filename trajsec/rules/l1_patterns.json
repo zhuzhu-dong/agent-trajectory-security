@@ -1,0 +1,96 @@
+{
+  "version": "l1-2026-09-28",
+  "comment": "Pattern strings live here as data. Structural validators are referenced by name and implemented in detect.py, because they are code (base64-decode the JWT header and assert it parses; urlsplit the DSN and assert it carries a password). A regex alone would match shapes, not credentials.",
+  "rules": [
+    {
+      "id": "l1.api_key.sk",
+      "type": "SECRET_API_KEY",
+      "pattern": "\\bsk-[A-Za-z0-9_-]{16,}\\b",
+      "validator": null,
+      "note": "OpenAI/DeepSeek-style key prefix."
+    },
+    {
+      "id": "l1.api_key.github",
+      "type": "SECRET_API_KEY",
+      "pattern": "\\bghp_[A-Za-z0-9]{36}\\b",
+      "validator": null
+    },
+    {
+      "id": "l1.api_key.slack",
+      "type": "SECRET_API_KEY",
+      "pattern": "\\bxox[baprs]-[A-Za-z0-9-]{10,}\\b",
+      "validator": null
+    },
+    {
+      "id": "l1.cloud.aws_access_key_id",
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "pattern": "\\bAKIA[0-9A-Z]{16}\\b",
+      "validator": null
+    },
+    {
+      "id": "l1.cloud.aws_secret_in_context",
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "pattern": "(?i)aws_?secret_?access_?key[\"'\\s:=]+([A-Za-z0-9/+=]{40})",
+      "group": 1,
+      "validator": null,
+      "note": "The secret half has no prefix, so it is only findable next to its key name."
+    },
+    {
+      "id": "l1.jwt",
+      "type": "SECRET_JWT",
+      "pattern": "\\beyJ[A-Za-z0-9_-]{4,}\\.[A-Za-z0-9_-]{4,}\\.[A-Za-z0-9_-]{4,}\\b",
+      "validator": "jwt_header"
+    },
+    {
+      "id": "l1.crypto.pem_private_key",
+      "type": "CRYPTO_MATERIAL",
+      "pattern": "-----BEGIN [A-Z ]*PRIVATE KEY-----[\\s\\S]*?-----END [A-Z ]*PRIVATE KEY-----",
+      "validator": "pem_pair"
+    },
+    {
+      "id": "l1.crypto.ssh_public",
+      "type": "CRYPTO_MATERIAL",
+      "pattern": "\\bssh-(?:rsa|ed25519|dss)\\s+AAAA[A-Za-z0-9+/=]{20,}",
+      "validator": null
+    },
+    {
+      "id": "l1.dsn",
+      "type": "SECRET_DSN",
+      "pattern": "\\b(?:postgres(?:ql)?|mysql|mariadb|mongodb(?:\\+srv)?|redis|rediss|amqp|amqps|mssql|smtp|ftps?|ldaps?)://[^\\s\"'<>\\\\)\\]]+",
+      "validator": "dsn_has_password"
+    },
+    {
+      "id": "l1.bearer",
+      "type": "SECRET_BEARER",
+      "pattern": "(?i)\\bbearer\\s+([A-Za-z0-9._~+/=-]{16,})",
+      "group": 1,
+      "validator": null
+    },
+    {
+      "id": "l1.pii.email",
+      "type": "PII_EMAIL",
+      "pattern": "(?<![:/\\w.])[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b",
+      "validator": null,
+      "note": "The lookbehind keeps userinfo out of a connection string (smtp://user:pass@host) from being read as an email address."
+    },
+    {
+      "id": "l1.net.private_ipv4",
+      "type": "INTERNAL_TOPOLOGY",
+      "pattern": "\\b(?:10\\.\\d{1,3}|192\\.168|172\\.(?:1[6-9]|2\\d|3[01]))\\.\\d{1,3}\\.\\d{1,3}\\b",
+      "validator": null
+    },
+    {
+      "id": "l1.path.windows_user",
+      "type": "PII_PATH_USERNAME",
+      "pattern": "[A-Za-z]:\\\\\\\\Users\\\\\\\\[^\\\\\\\\\\s\"']+",
+      "validator": null,
+      "note": "The account name here is a single character, so only a structural rule can find it."
+    },
+    {
+      "id": "l1.host.internal",
+      "type": "INTERNAL_TOPOLOGY",
+      "pattern": "\\b[a-z0-9][a-z0-9-]*(?:\\.[a-z0-9-]+)*\\.(?:internal|corp\\.internal|local|lan)\\b",
+      "validator": null
+    }
+  ]
+}

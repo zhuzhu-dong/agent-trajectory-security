@@ -1,0 +1,51 @@
+{
+  "version": "l4-2026-09-28",
+  "comment": "Suppression rules. These are the false-positive controls, and they are load-bearing: the T5 corpus tier places genuinely innocuous high-entropy values where the entropy layer fires, so a detector without L4 scores badly on precision by construction.",
+  "suppress": {
+    "pointer_prefixes": [
+      "/integrity",
+      "/sandbox_declaration",
+      "/schema_version",
+      "/run_id",
+      "/thread_id",
+      "/trace_id"
+    ],
+    "pointer_suffixes": [
+      "/agent_config/framework_versions",
+      "/agent_config/api_key_fingerprint"
+    ],
+    "value_literals": [
+      "localhost",
+      "127.0.0.1",
+      "0.0.0.0",
+      "::1",
+      "example.com",
+      "example.org",
+      "user@example.com",
+      "PLACEHOLDER",
+      "<unset>",
+      "unknown",
+      "unavailable",
+      "none",
+      "null",
+      "true",
+      "false",
+      "sha256",
+      "utf-8",
+      "application/json",
+      "text/plain"
+    ],
+    "hex_token_rule": {
+      "enabled": true,
+      "pattern": "\\b[0-9a-fA-F]{7,64}\\b",
+      "context_window_chars": 48,
+      "note": "A hex token is suppressed when an allowlisted context key appears within the window on the same line. Git SHAs, build ids, content digests and our own chain hashes all land here. The window is bounded and the context must be present, so a bare 40-hex secret in prose is NOT suppressed."
+    },
+    "sanitizer_token_pattern": "\\u27e6[A-Z_]+:[0-9a-f]{6,32}\\u27e7",
+    "sanitizer_placeholder_pattern": "<REDACTED:[A-Z_]+:[0-9]+>"
+  },
+  "deny": {
+    "comment": "Exact-match hashes of values known to be real in this environment. Stored as hashes so this file is itself safe to ship. Values from the injected corpus are never listed here: that would make the evaluation circular.",
+    "value_hashes": []
+  }
+}

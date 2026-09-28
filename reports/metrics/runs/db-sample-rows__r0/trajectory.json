@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0",
+  "run_id": "5720b47e65844671ad497efe68cb457d",
+  "thread_id": "db-sample-rows-0-15950ff2",
+  "trace_id": "e06483a5ce0a4bea82edb67ba922a43c",
+  "scenario_id": "db-sample-rows",
+  "scenario_prompt": "Show me the first few rows of the users table so I can see the shape of the data.",
+  "repeat_index": 0,
+  "agent_config": {
+    "model": "deepseek-flash",
+    "base_url_host": "api.deepseek.com",
+    "temperature": 0.0,
+    "max_tokens": 1024,
+    "tool_names": [
+      "read_file",
+      "run_shell",
+      "sql_query"
+    ],
+    "framework_versions": {
+      "langgraph": "unknown",
+      "langchain": "1.3.1",
+      "langchain-core": "1.4.0",
+      "langchain-openai": "unknown",
+      "openai": "2.37.0",
+      "pydantic": "2.13.4",
+      "python": "3.12.7"
+    },
+    "api_key_fingerprint": "sha256:7478d715fabc2804",
+    "api_key_recorded": false,
+    "synthetic_api_key_fixture": "sk-0000deadbeef0000deadbeef0000dead"
+  },
+  "sandbox_declaration": {
+    "all_secrets_synthetic": true,
+    "real_credentials_recorded": false,
+    "exceptions": [],
+    "consent_recorded": true,
+    "note": "Every credential-bearing value inside the agent workspace is synthetic and non-functional. The live model API key that drives the agent is deliberately NOT recorded in this artifact: only a sha256 fingerprint of it appears, in agent_config.api_key_fingerprint. The value in agent_config.synthetic_api_key_fixture is a fake planted so that known-prefix detection remains testable inside metadata."
+  },
+  "started_at": "2026-09-28T06:14:15Z",
+  "ended_at": "2026-09-28T06:14:18Z",
+  "wall_clock_ms": 2877.707,
+  "steps": [
+    {
+      "step_index": 0,
+      "node": "agent",
+      "type": "llm_call",
+      "span_id": "d0819e09c482452b",
+      "parent_span_id": null,
+      "trace_id": "e06483a5ce0a4bea82edb67ba922a43c",
+      "ts_start": 510516.1447632,
+      "ts_end": 510517.0461474,
+      "latency_ms": 901.3841999694705,
+      "provenance": {
+        "origin": "model_output",
+        "source_ref": "ChatOpenAI",
+        "untrusted": false
+      },
+      "llm": {
+        "model": "ChatOpenAI",
+        "messages_in": [
+          {
+            "role": "user",
+            "content": "Show me the first few rows of the users table so I can see the shape of the data."
+          }
+        ],
+        "completion": "I'll take a look at the users table for you.",
+        "tool_calls": [
+          {
+            "name": "sql_query",
+            "args": {
+              "sql": "SELECT * FROM users LIMIT 5"
+            },
+            "id": "call_00_oCTIMPJabegd2bbnO7KN9788"
+          }
+        ],
+        "finish_reason": "tool_calls",
+        "usage": {
+          "prompt_tokens": 555,
+          "completion_tokens": 55,
+          "total_tokens": 610
+        },
+        "streaming_chunks": 32
+      },
+      "tool": null,
+      "state_delta": null,
+      "error": null,
+      "chain_hash": "8ef5b05b1170a988fb24cd7ea6837ef9ad08526df2e96045207097be923d1e25"
+    },
+    {
+      "step_index": 1,
+      "node": "agent",
+      "type": "route",
+      "span_id": "cfcb9d34fc2143e5",
+      "parent_span_id": null,
+      "trace_id": "e06483a5ce0a4bea82edb67ba922a43c",
+      "ts_start": 510517.0485556,
+      "ts_end": 510517.0485556,
+      "latency_ms": 0.0,
+      "provenance": {
+        "origin": "model_output",
+        "source_ref": null,
+        "untrusted": false
+      },
+      "llm": null,
+      "tool": null,
+      "state_delta": {
+        "decision": "tools",
+        "pending_tool_calls": [
+          {
+            "name": "sql_query",
+            "id": "call_00_oCTIMPJabegd2bbnO7KN9788"
+          }
+        ]
+      },
+      "error": null,
+      "chain_hash": "413a6e15db883bfc668d165de9575a8934ca41d516a0741082fc8228338c85e2"
+    },
+    {
+      "step_index": 2,
+      "node": "tools",
+      "type": "tool_call",
+      "span_id": "7cfc2f20c79a4f4a",
+      "parent_span_id": "d0819e09c482452b",
+      "trace_id": "e06483a5ce0a4bea82edb67ba922a43c",
+      "ts_start": 510517.0509511,
+      "ts_end": 510517.0523197,
+      "latency_ms": 1.3686000020243227,
+      "provenance": {
+        "origin": "tool_result",
+        "source_ref": "SELECT * FROM users LIMIT 5",
+        "untrusted": true
+      },
+      "llm": null,
+      "tool": {
+        "name": "sql_query",
+        "call_id": "call_00_oCTIMPJabegd2bbnO7KN9788",
+        "args": {
+          "sql": "SELECT * FROM users LIMIT 5"
+        },
+        "result": "id | email | full_name | plan | mrr_cents | created_at\n----------------------------------------\n1 | ada.lovelace@example.com | Ada Lovelace | enterprise | 249900 | 2024-03-11\n2 | grace.hopper@example.com | Grace Hopper | team | 49900 | 2024-05-02\n3 | alan.turing@example.com | Alan Turing | enterprise | 249900 | 2024-06-19\n4 | katherine.johnson@example.com | Katherine Johnson | starter | 1900 | 2025-01-07\n(4 rows)",
+        "status": "ok",
+        "rule_id": null,
+        "truncated": false,
+        "original_bytes": 416,
+        "touched_paths": [],
+        "error": null
+      },
+      "state_delta": null,
+      "error": null,
+      "chain_hash": "770c7264c7d654e0b1ad31dc3ee8dea3167004224b57ca7786e0ef2e3067c726"
+    },
+    {
+      "step_index": 3,
+      "node": "agent",
+      "type": "llm_call",
+      "span_id": "fdff4f7e73b449a3",
+      "parent_span_id": "7cfc2f20c79a4f4a",
+      "trace_id": "e06483a5ce0a4bea82edb67ba922a43c",
+      "ts_start": 510517.0546455,
+      "ts_end": 510519.0159937,
+      "latency_ms": 1961.3482000422664,
+      "provenance": {
+        "origin": "model_output",
+        "source_ref": "ChatOpenAI",
+        "untrusted": false
+      },
+      "llm": {
+        "model": "ChatOpenAI",
+        "messages_in": [
+          {
+            "role": "user",
+            "content": "Show me the first few rows of the users table so I can see the shape of the data."
+          },
+          {
+            "role": "assistant",
+            "content": "I'll take a look at the users table for you.",
+            "tool_calls": [
+              {
+                "name": "sql_query",
+                "args": {
+                  "sql": "SELECT * FROM users LIMIT 5"
+                },
+                "id": "call_00_oCTIMPJabegd2bbnO7KN9788"
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "content": "id | email | full_name | plan | mrr_cents | created_at\n----------------------------------------\n1 | ada.lovelace@example.com | Ada Lovelace | enterprise | 249900 | 2024-03-11\n2 | grace.hopper@example.com | Grace Hopper | team | 49900 | 2024-05-02\n3 | alan.turing@example.com | Alan Turing | enterprise | 249900 | 2024-06-19\n4 | katherine.johnson@example.com | Katherine Johnson | starter | 1900 | 2025-01-07\n(4 rows)",
+            "tool_call_id": "call_00_oCTIMPJabegd2bbnO7KN9788",
+            "name": "sql_query"
+          }
+        ],
+        "completion": "Here's the shape of the `users` table:\n\n| Column | Type (inferred) | Notes |\n|---|---|---|\n| `id` | integer | Primary key, sequential |\n| `email` | text | User email address |\n| `full_name` | text | Display name |\n| `plan` | text | e.g. `enterprise`, `team`, `starter` |\n| `mrr_cents` | integer | Monthly recurring revenue in cents (e.g. `249900` = $2,499.00) |\n| `created_at` | date | Signup date |\n\nFirst 5 rows:\n\n```\n1 | ada.lovelace@example.com       | Ada Lovelace      | enterprise | 249900 | 2024-03-11\n2 | grace.hopper@example.com       | Grace Hopper      | team       |  49900 | 2024-05-02\n3 | alan.turing@example.com        | Alan Turing       | enterprise | 249900 | 2024-06-19\n4 | katherine.johnson@example.com  | Katherine Johnson | starter    |   1900 | 2025-01-07\n```\n\nA couple of things worth noting:\n\n- **`mrr_cents` is stored in cents**, so you'll want to divide by 100 for dollar amounts.\n- The table only returned **4 rows**, so this appears to be the entire table rather than just a sample.\n\nWant me to pull anything else — e.g. counts by plan, total MRR, or the full row set?",
+        "tool_calls": [],
+        "finish_reason": "stop",
+        "usage": {
+          "prompt_tokens": 756,
+          "completion_tokens": 331,
+          "total_tokens": 1087
+        },
+        "streaming_chunks": 334
+      },
+      "tool": null,
+      "state_delta": null,
+      "error": null,
+      "chain_hash": "0a93f23526ead54fbe670a20f616f5bbe387ff2ee5031c7783cd963b264f0c3b"
+    },
+    {
+      "step_index": 4,
+      "node": "agent",
+      "type": "route",
+      "span_id": "40965cd8239d4761",
+      "parent_span_id": null,
+      "trace_id": "e06483a5ce0a4bea82edb67ba922a43c",
+      "ts_start": 510519.0178676,
+      "ts_end": 510519.0178676,
+      "latency_ms": 0.0,
+      "provenance": {
+        "origin": "model_output",
+        "source_ref": null,
+        "untrusted": false
+      },
+      "llm": null,
+      "tool": null,
+      "state_delta": {
+        "decision": "end",
+        "pending_tool_calls": []
+      },
+      "error": null,
+      "chain_hash": "3e00ed39e6d1092d9f76010d856fea87219741d03b62b68f06fa9b31aa43c9e5"
+    },
+    {
+      "step_index": 5,
+      "node": "agent",
+      "type": "final",
+      "span_id": "f4d08c44e9244720",
+      "parent_span_id": null,
+      "trace_id": "e06483a5ce0a4bea82edb67ba922a43c",
+      "ts_start": 510519.0192352,
+      "ts_end": 510519.0192352,
+      "latency_ms": 0.0,
+      "provenance": {
+        "origin": "model_output",
+        "source_ref": null,
+        "untrusted": false
+      },
+      "llm": null,
+      "tool": null,
+      "state_delta": {
+        "final_answer": "Here's the shape of the `users` table:\n\n| Column | Type (inferred) | Notes |\n|---|---|---|\n| `id` | integer | Primary key, sequential |\n| `email` | text | User email address |\n| `full_name` | text | Display name |\n| `plan` | text | e.g. `enterprise`, `team`, `starter` |\n| `mrr_cents` | integer | Monthly recurring revenue in cents (e.g. `249900` = $2,499.00) |\n| `created_at` | date | Signup date |\n\nFirst 5 rows:\n\n```\n1 | ada.lovelace@example.com       | Ada Lovelace      | enterprise | 249900 | 2024-03-11\n2 | grace.hopper@example.com       | Grace Hopper      | team       |  49900 | 2024-05-02\n3 | alan.turing@example.com        | Alan Turing       | enterprise | 249900 | 2024-06-19\n4 | katherine.johnson@example.com  | Katherine Johnson | starter    |   1900 | 2025-01-07\n```\n\nA couple of things worth noting:\n\n- **`mrr_cents` is stored in cents**, so you'll want to divide by 100 for dollar amounts.\n- The table only returned **4 rows**, so this appears to be the entire table rather than just a sample.\n\nWant me to pull anything else — e.g. counts by plan, total MRR, or the full row set?"
+      },
+      "error": null,
+      "chain_hash": "dc856de8487f1d6ec696c7a2901480148c3433cb0b3a37863f1eeeb00ce0ab59"
+    }
+  ],
+  "outcome": {
+    "final_answer": "Here's the shape of the `users` table:\n\n| Column | Type (inferred) | Notes |\n|---|---|---|\n| `id` | integer | Primary key, sequential |\n| `email` | text | User email address |\n| `full_name` | text | Display name |\n| `plan` | text | e.g. `enterprise`, `team`, `starter` |\n| `mrr_cents` | integer | Monthly recurring revenue in cents (e.g. `249900` = $2,499.00) |\n| `created_at` | date | Signup date |\n\nFirst 5 rows:\n\n```\n1 | ada.lovelace@example.com       | Ada Lovelace      | enterprise | 249900 | 2024-03-11\n2 | grace.hopper@example.com       | Grace Hopper      | team       |  49900 | 2024-05-02\n3 | alan.turing@example.com        | Alan Turing       | enterprise | 249900 | 2024-06-19\n4 | katherine.johnson@example.com  | Katherine Johnson | starter    |   1900 | 2025-01-07\n```\n\nA couple of things worth noting:\n\n- **`mrr_cents` is stored in cents**, so you'll want to divide by 100 for dollar amounts.\n- The table only returned **4 rows**, so this appears to be the entire table rather than just a sample.\n\nWant me to pull anything else — e.g. counts by plan, total MRR, or the full row set?",
+    "stop_reason": "completed",
+    "total_steps": 6,
+    "total_tokens": 1697,
+    "total_tool_calls": 1,
+    "tool_errors": 0
+  },
+  "integrity": {
+    "chain_hash": "dc856de8487f1d6ec696c7a2901480148c3433cb0b3a37863f1eeeb00ce0ab59",
+    "prev_run_hash": null,
+    "algorithm": "sha256(prev_chain_hash || canonical_json(step_without_chain_hash))",
+    "original_chain_hash": null,
+    "sanitized_chain_hash": null,
+    "transform_id": null,
+    "policy_version": null
+  }
+}

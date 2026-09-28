@@ -1,0 +1,37 @@
+{
+  "version": "fixtures-2026-09-28",
+  "comment": "Ground truth for the secrets that genuinely occur in the agent workspace. Without this, every correct detection of a real planted secret would be scored as a false positive. All values are synthetic and already sit in plaintext under agentlab/workspace/. The evaluator hashes them for matching; nothing here is a live credential.",
+  "values": [
+    {"value": "sk-a1b2c3d4e5f60718293a4b5c6d7e8f90", "type": "SECRET_API_KEY"},
+    {"value": "sk-0000deadbeef0000deadbeef0000dead", "type": "SECRET_API_KEY"},
+    {"value": "s3cr3t-Pa55w0rd", "type": "SECRET_DSN_PASSWORD"},
+    {"value": "AKIAIOSFODNN7EXAMPLE", "type": "SECRET_CLOUD_CREDENTIAL"},
+    {"value": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY", "type": "SECRET_CLOUD_CREDENTIAL"},
+    {"value": "Zx9Kq2mVt7Lp4Rw8Nb3Yc6Hd1Fg5Js0T", "type": "SECRET_GENERIC_ASSIGNMENT"},
+    {"value": "MailerPwd123", "type": "SECRET_DSN_PASSWORD"},
+    {"value": "r3d1sP4ss", "type": "SECRET_DSN_PASSWORD"},
+    {"value": "s3ss10n-S1gn1ng-K3y-9f2a4c", "type": "SECRET_GENERIC_ASSIGNMENT"},
+    {"value": "10.0.3.17", "type": "INTERNAL_TOPOLOGY"},
+    {"value": "cache.internal", "type": "INTERNAL_TOPOLOGY"},
+    {"value": "mail.internal", "type": "INTERNAL_TOPOLOGY"},
+    {"value": "billing-api.corp.internal", "type": "INTERNAL_TOPOLOGY"},
+    {"value": "billing-sync-prod-01.corp.internal", "type": "INTERNAL_TOPOLOGY"},
+    {"value": "reports-db.corp.internal", "type": "INTERNAL_TOPOLOGY"},
+    {"value": "ada.lovelace@example.com", "type": "PII_EMAIL"},
+    {"value": "grace.hopper@example.com", "type": "PII_EMAIL"},
+    {"value": "alan.turing@example.com", "type": "PII_EMAIL"},
+    {"value": "katherine.johnson@example.com", "type": "PII_EMAIL"}
+  ],
+  "hostname_patterns": [
+    "corp\\.internal",
+    "\\.internal\\b",
+    "DESKTOP-BILLING"
+  ],
+  "path_patterns": [
+    "[A-Za-z]:\\\\Users\\\\[^\\\\\\s\"']+"
+  ],
+  "notes": {
+    "build_id": "7f3a9c2e5b1d8046fa3c7e9b2d5a8c1f4e6b9d20 is deliberately NOT listed: it is a 40-hex build identifier, not a secret, and the allowlist is expected to suppress it. Counting it as a positive would reward the wrong behaviour.",
+    "account_name": "The Windows account name in this environment is a single character. It is a genuine disclosure but carries almost no entropy, which is the concrete argument for the structural layer existing at all."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "c5289fa6c0f94f5b9f89cfae904991c6",
+  "profile": "redacted",
+  "replacements": [
+    {
+      "finding_id": "81f44b78573961b4",
+      "pointer": "/agent_config/synthetic_api_key_fixture",
+      "token_id": "SECRET_API_KEY:1",
+      "original_span": [
+        0,
+        35
+      ],
+      "new_span": [
+        0,
+        27
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 27
+    }
+  ],
+  "mode": "redacted"
+}

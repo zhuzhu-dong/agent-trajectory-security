@@ -1,0 +1,82 @@
+{
+  "version": "l2-2026-09-28",
+  "comment": "Context rules. Field sensitivity is a function of the JSON path, not only of the content: the same bytes under agent_config and under integrity carry different meaning.",
+  "sensitive_key_names": "(?i)(api[_-]?key|secret|token|password|passwd|credential|authorization|auth|private[_-]?key|access[_-]?key|signing[_-]?key|session[_-]?key|client[_-]?secret|db[_-]?pass)",
+  "sensitive_key_allowlist": "(?i)(token_count|tokens|total_tokens|prompt_tokens|completion_tokens|token_usage|password_field|secret_name|token_id|token_scope|token_form)",
+  "path_policies": [
+    {
+      "pointer_prefix": "/agent_config",
+      "level": "SECRET",
+      "scrutinise": true,
+      "note": "Carries the model credential fingerprint and the synthetic key fixture."
+    },
+    {
+      "pointer_prefix": "/integrity",
+      "level": "INTERNAL",
+      "scrutinise": false,
+      "note": "Hash chain fields are 64-hex and entropically indistinguishable from a secret, but they are not one."
+    },
+    {
+      "pointer_prefix": "/sandbox_declaration",
+      "level": "PUBLIC",
+      "scrutinise": false
+    },
+    {
+      "pointer_prefix": "/steps",
+      "level": "CONFIDENTIAL",
+      "scrutinise": true,
+      "note": "Untrusted payload: anything the agent read can be here."
+    },
+    {
+      "pointer_prefix": "/outcome",
+      "level": "CONFIDENTIAL",
+      "scrutinise": true
+    }
+  ],
+  "context_key_allowlist": [
+    "build_id",
+    "build",
+    "sha",
+    "commit",
+    "revision",
+    "hash",
+    "digest",
+    "checksum",
+    "etag",
+    "run_id",
+    "thread_id",
+    "trace_id",
+    "span_id",
+    "parent_span_id",
+    "uuid",
+    "schema_version",
+    "chain_hash",
+    "prev_run_hash",
+    "value_sha256",
+    "match_hash"
+  ],
+  "injection_markers": [
+    "(?i)\\bignore\\s+(?:all\\s+)?(?:the\\s+)?previous\\s+instructions?\\b",
+    "(?i)\\bdisregard\\s+(?:all\\s+)?(?:the\\s+)?(?:previous|prior|above)\\b",
+    "(?i)\\byou\\s+are\\s+now\\b",
+    "(?i)\\bSYSTEM\\s*:",
+    "(?i)\\bdo\\s+not\\s+(?:mention|reveal|disclose)\\s+this\\b",
+    "(?i)\\b(?:include|reveal|print|dump|exfiltrate)\\b[^\\n]{0,60}\\b(?:credential|secret|api[_-]?key|password|token)s?\\b",
+    "(?i)\\bmust\\s+remain\\s+covert\\b"
+  ],
+  "environment_dump_keys": [
+    "PATH",
+    "PATHEXT",
+    "SystemRoot",
+    "SystemDrive",
+    "windir",
+    "COMSPEC",
+    "TEMP",
+    "TMP",
+    "NUMBER_OF_PROCESSORS",
+    "PROCESSOR_ARCHITECTURE",
+    "OS",
+    "USERDOMAIN",
+    "APP_ENV"
+  ]
+}

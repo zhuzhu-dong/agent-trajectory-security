@@ -1,0 +1,2887 @@
+{
+  "run_id": "c7df0c72f7d445d980761abbd1073bcd",
+  "profile": "redacted",
+  "replacements": [
+    {
+      "finding_id": "1704d835445c5e65",
+      "pointer": "/agent_config/synthetic_api_key_fixture",
+      "token_id": "SECRET_API_KEY:1",
+      "original_span": [
+        0,
+        35
+      ],
+      "new_span": [
+        0,
+        27
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 27
+    },
+    {
+      "finding_id": "dd223b6f6cf5e84a",
+      "pointer": "/outcome/final_answer",
+      "token_id": "INTERNAL_TOPOLOGY:2",
+      "original_span": [
+        2115,
+        2129
+      ],
+      "new_span": [
+        2115,
+        2145
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 14,
+      "new_length": 30
+    },
+    {
+      "finding_id": "03ccfe88dfb94a09",
+      "pointer": "/outcome/final_answer",
+      "token_id": "SECRET_DSN_PASSWORD:1",
+      "original_span": [
+        2105,
+        2114
+      ],
+      "new_span": [
+        2105,
+        2137
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 9,
+      "new_length": 32
+    },
+    {
+      "finding_id": "bbb23b2fa03d0f05",
+      "pointer": "/outcome/final_answer",
+      "token_id": "INTERNAL_TOPOLOGY:1",
+      "original_span": [
+        2029,
+        2038
+      ],
+      "new_span": [
+        2029,
+        2059
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 30
+    },
+    {
+      "finding_id": "5413ffe0e1cee07d",
+      "pointer": "/steps/10/tool/result",
+      "token_id": "INTERNAL_TOPOLOGY:4",
+      "original_span": [
+        260,
+        274
+      ],
+      "new_span": [
+        260,
+        290
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 14,
+      "new_length": 30
+    },
+    {
+      "finding_id": "a01c321f61bb9b4a",
+      "pointer": "/steps/10/tool/result",
+      "token_id": "SECRET_DSN_PASSWORD:3",
+      "original_span": [
+        250,
+        259
+      ],
+      "new_span": [
+        250,
+        282
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 9,
+      "new_length": 32
+    },
+    {
+      "finding_id": "bce550e47678e632",
+      "pointer": "/steps/10/tool/result",
+      "token_id": "INTERNAL_TOPOLOGY:3",
+      "original_span": [
+        160,
+        169
+      ],
+      "new_span": [
+        160,
+        190
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 30
+    },
+    {
+      "finding_id": "9ae32f903ff49da4",
+      "pointer": "/steps/10/tool/result",
+      "token_id": "SECRET_DSN_PASSWORD:2",
+      "original_span": [
+        144,
+        159
+      ],
+      "new_span": [
+        144,
+        176
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 32
+    },
+    {
+      "finding_id": "c6c9ae2b68355922",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:5",
+      "original_span": [
+        2459,
+        2472
+      ],
+      "new_span": [
+        2459,
+        2489
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 30
+    },
+    {
+      "finding_id": "8fb6112ee6fb5629",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_DSN_PASSWORD:4",
+      "original_span": [
+        2446,
+        2458
+      ],
+      "new_span": [
+        2446,
+        2478
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 32
+    },
+    {
+      "finding_id": "eea44cead42fb252",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:764ad96a8735",
+      "original_span": [
+        2396,
+        2422
+      ],
+      "new_span": [
+        2396,
+        2422
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 26,
+      "new_length": 26
+    },
+    {
+      "finding_id": "6b478520f4543bd3",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:b48e7d13c827",
+      "original_span": [
+        413,
+        438
+      ],
+      "new_span": [
+        413,
+        438
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 25,
+      "new_length": 25
+    },
+    {
+      "finding_id": "1832f4abb1e10767",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "3615702166abc5e2",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "20a964f9fa8d8d78",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:2",
+      "original_span": [
+        326,
+        341
+      ],
+      "new_span": [
+        326,
+        364
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 38
+    },
+    {
+      "finding_id": "be3674ebcf800372",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "e04bacacef551671",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "e76b042bb9e1fa03",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "2bf61024a917a255",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "0c0ab77f6b994831",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "627a9f98ac2e2c5b",
+      "pointer": "/steps/11/llm/messages_in/3/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "6a5a84f094468dd5",
+      "pointer": "/steps/11/llm/messages_in/8/content",
+      "token_id": "INTERNAL_TOPOLOGY:7",
+      "original_span": [
+        260,
+        274
+      ],
+      "new_span": [
+        260,
+        290
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 14,
+      "new_length": 30
+    },
+    {
+      "finding_id": "87bb466dbb18dbd2",
+      "pointer": "/steps/11/llm/messages_in/8/content",
+      "token_id": "SECRET_DSN_PASSWORD:6",
+      "original_span": [
+        250,
+        259
+      ],
+      "new_span": [
+        250,
+        282
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 9,
+      "new_length": 32
+    },
+    {
+      "finding_id": "8bdd18b320a3e069",
+      "pointer": "/steps/11/llm/messages_in/8/content",
+      "token_id": "INTERNAL_TOPOLOGY:6",
+      "original_span": [
+        160,
+        169
+      ],
+      "new_span": [
+        160,
+        190
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 30
+    },
+    {
+      "finding_id": "a374a34818134c60",
+      "pointer": "/steps/11/llm/messages_in/8/content",
+      "token_id": "SECRET_DSN_PASSWORD:5",
+      "original_span": [
+        144,
+        159
+      ],
+      "new_span": [
+        144,
+        176
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 32
+    },
+    {
+      "finding_id": "c6afcb52ca1c3d6a",
+      "pointer": "/steps/13/tool/result",
+      "token_id": "INTERNAL_TOPOLOGY:830853eb2ff0",
+      "original_span": [
+        183,
+        217
+      ],
+      "new_span": [
+        183,
+        217
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 34,
+      "new_length": 34
+    },
+    {
+      "finding_id": "853aa7c350f78bc3",
+      "pointer": "/steps/14/tool/result",
+      "token_id": "INTERNAL_TOPOLOGY:5cb18ac9b956",
+      "original_span": [
+        295,
+        319
+      ],
+      "new_span": [
+        295,
+        319
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 24,
+      "new_length": 24
+    },
+    {
+      "finding_id": "beae4171c797b583",
+      "pointer": "/steps/14/tool/result",
+      "token_id": "INTERNAL_TOPOLOGY:8",
+      "original_span": [
+        255,
+        264
+      ],
+      "new_span": [
+        255,
+        285
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 30
+    },
+    {
+      "finding_id": "7f1a9327a8f9ac44",
+      "pointer": "/steps/14/tool/result",
+      "token_id": "SECRET_DSN_PASSWORD:7",
+      "original_span": [
+        239,
+        254
+      ],
+      "new_span": [
+        239,
+        271
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 32
+    },
+    {
+      "finding_id": "d195268411740085",
+      "pointer": "/steps/15/llm/messages_in/10/content",
+      "token_id": "INTERNAL_TOPOLOGY:830853eb2ff0",
+      "original_span": [
+        183,
+        217
+      ],
+      "new_span": [
+        183,
+        217
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 34,
+      "new_length": 34
+    },
+    {
+      "finding_id": "1bcdaa3ef5aeb8f7",
+      "pointer": "/steps/15/llm/messages_in/11/content",
+      "token_id": "INTERNAL_TOPOLOGY:5cb18ac9b956",
+      "original_span": [
+        295,
+        319
+      ],
+      "new_span": [
+        295,
+        319
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 24,
+      "new_length": 24
+    },
+    {
+      "finding_id": "5e683dd19c454c3d",
+      "pointer": "/steps/15/llm/messages_in/11/content",
+      "token_id": "INTERNAL_TOPOLOGY:9",
+      "original_span": [
+        255,
+        264
+      ],
+      "new_span": [
+        255,
+        285
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 30
+    },
+    {
+      "finding_id": "18de8d0fa83dcda3",
+      "pointer": "/steps/15/llm/messages_in/11/content",
+      "token_id": "SECRET_DSN_PASSWORD:8",
+      "original_span": [
+        239,
+        254
+      ],
+      "new_span": [
+        239,
+        271
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 32
+    },
+    {
+      "finding_id": "55404b276cdb7101",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:10",
+      "original_span": [
+        2459,
+        2472
+      ],
+      "new_span": [
+        2459,
+        2490
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "32a8320caefebde7",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_DSN_PASSWORD:9",
+      "original_span": [
+        2446,
+        2458
+      ],
+      "new_span": [
+        2446,
+        2478
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 32
+    },
+    {
+      "finding_id": "44f23df43b9fd9a4",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:764ad96a8735",
+      "original_span": [
+        2396,
+        2422
+      ],
+      "new_span": [
+        2396,
+        2422
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 26,
+      "new_length": 26
+    },
+    {
+      "finding_id": "a2e5802a08929c28",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:b48e7d13c827",
+      "original_span": [
+        413,
+        438
+      ],
+      "new_span": [
+        413,
+        438
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 25,
+      "new_length": 25
+    },
+    {
+      "finding_id": "e2b612a9dc3a3cfb",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "86d859a5f657aba8",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "0274f00fe038d1a8",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:3",
+      "original_span": [
+        326,
+        341
+      ],
+      "new_span": [
+        326,
+        364
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 38
+    },
+    {
+      "finding_id": "af77b1294a7f8d1c",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "be7b752d091e1a4b",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "0b0b97fcdf06e0b7",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "7dce77d97831a944",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "74342ece00dbf926",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "23cf52ae3a045a0f",
+      "pointer": "/steps/15/llm/messages_in/3/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "57f0027598de20a5",
+      "pointer": "/steps/15/llm/messages_in/8/content",
+      "token_id": "INTERNAL_TOPOLOGY:12",
+      "original_span": [
+        260,
+        274
+      ],
+      "new_span": [
+        260,
+        291
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 14,
+      "new_length": 31
+    },
+    {
+      "finding_id": "d9e771e27351b184",
+      "pointer": "/steps/15/llm/messages_in/8/content",
+      "token_id": "SECRET_DSN_PASSWORD:11",
+      "original_span": [
+        250,
+        259
+      ],
+      "new_span": [
+        250,
+        283
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 9,
+      "new_length": 33
+    },
+    {
+      "finding_id": "9347b63995c11ab9",
+      "pointer": "/steps/15/llm/messages_in/8/content",
+      "token_id": "INTERNAL_TOPOLOGY:11",
+      "original_span": [
+        160,
+        169
+      ],
+      "new_span": [
+        160,
+        191
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 31
+    },
+    {
+      "finding_id": "a10d0454395fba9a",
+      "pointer": "/steps/15/llm/messages_in/8/content",
+      "token_id": "SECRET_DSN_PASSWORD:10",
+      "original_span": [
+        144,
+        159
+      ],
+      "new_span": [
+        144,
+        177
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 33
+    },
+    {
+      "finding_id": "1bdb1d1f25874819",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "INTERNAL_TOPOLOGY:13",
+      "original_span": [
+        562,
+        575
+      ],
+      "new_span": [
+        562,
+        593
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "f06e65d7b3464029",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_DSN_PASSWORD:12",
+      "original_span": [
+        549,
+        561
+      ],
+      "new_span": [
+        549,
+        582
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 33
+    },
+    {
+      "finding_id": "eb0a39e692abca36",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        493,
+        525
+      ],
+      "new_span": [
+        493,
+        525
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "369cf97820167764",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        493,
+        525
+      ],
+      "new_span": [
+        493,
+        525
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "663bf2168d43b0c6",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        441,
+        481
+      ],
+      "new_span": [
+        441,
+        481
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "8cb167b9cd2059e7",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        441,
+        481
+      ],
+      "new_span": [
+        441,
+        481
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "89c120d252f6cc92",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        398,
+        418
+      ],
+      "new_span": [
+        398,
+        418
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "17ad16c77bf6d961",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        398,
+        418
+      ],
+      "new_span": [
+        398,
+        418
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "efcffe3b5637c8fc",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:4",
+      "original_span": [
+        364,
+        379
+      ],
+      "new_span": [
+        364,
+        402
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 38
+    },
+    {
+      "finding_id": "61eb58a4d7f79187",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        316,
+        351
+      ],
+      "new_span": [
+        316,
+        351
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "39dd7eb936db884d",
+      "pointer": "/steps/17/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        316,
+        351
+      ],
+      "new_span": [
+        316,
+        351
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "dda884c47efa271e",
+      "pointer": "/steps/19/llm/messages_in/10/content",
+      "token_id": "INTERNAL_TOPOLOGY:830853eb2ff0",
+      "original_span": [
+        183,
+        217
+      ],
+      "new_span": [
+        183,
+        217
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 34,
+      "new_length": 34
+    },
+    {
+      "finding_id": "7ddf6620d36030c4",
+      "pointer": "/steps/19/llm/messages_in/11/content",
+      "token_id": "INTERNAL_TOPOLOGY:5cb18ac9b956",
+      "original_span": [
+        295,
+        319
+      ],
+      "new_span": [
+        295,
+        319
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 24,
+      "new_length": 24
+    },
+    {
+      "finding_id": "fb60dd4d5988a283",
+      "pointer": "/steps/19/llm/messages_in/11/content",
+      "token_id": "INTERNAL_TOPOLOGY:14",
+      "original_span": [
+        255,
+        264
+      ],
+      "new_span": [
+        255,
+        286
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 31
+    },
+    {
+      "finding_id": "f7bd77236a2a6727",
+      "pointer": "/steps/19/llm/messages_in/11/content",
+      "token_id": "SECRET_DSN_PASSWORD:13",
+      "original_span": [
+        239,
+        254
+      ],
+      "new_span": [
+        239,
+        272
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 33
+    },
+    {
+      "finding_id": "46aee037771aa840",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "INTERNAL_TOPOLOGY:15",
+      "original_span": [
+        562,
+        575
+      ],
+      "new_span": [
+        562,
+        593
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "2c3ef0d4cd207c98",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_DSN_PASSWORD:14",
+      "original_span": [
+        549,
+        561
+      ],
+      "new_span": [
+        549,
+        582
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 33
+    },
+    {
+      "finding_id": "a3e94ea231c58137",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        493,
+        525
+      ],
+      "new_span": [
+        493,
+        525
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "403db8bfd1483a66",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        493,
+        525
+      ],
+      "new_span": [
+        493,
+        525
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "956948508c9d864e",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        441,
+        481
+      ],
+      "new_span": [
+        441,
+        481
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "21846bcb76dcaf43",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        441,
+        481
+      ],
+      "new_span": [
+        441,
+        481
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "715bb6c753a50977",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        398,
+        418
+      ],
+      "new_span": [
+        398,
+        418
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "bd4db78ece19b1a8",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        398,
+        418
+      ],
+      "new_span": [
+        398,
+        418
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "fb637e0ac06ec1e4",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:5",
+      "original_span": [
+        364,
+        379
+      ],
+      "new_span": [
+        364,
+        402
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 38
+    },
+    {
+      "finding_id": "8090044f8c73696a",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        316,
+        351
+      ],
+      "new_span": [
+        316,
+        351
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "ad19f9dabfcca14a",
+      "pointer": "/steps/19/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        316,
+        351
+      ],
+      "new_span": [
+        316,
+        351
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "e24789937c1fceaa",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:16",
+      "original_span": [
+        2459,
+        2472
+      ],
+      "new_span": [
+        2459,
+        2490
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "818ab3f182c87433",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_DSN_PASSWORD:15",
+      "original_span": [
+        2446,
+        2458
+      ],
+      "new_span": [
+        2446,
+        2479
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 33
+    },
+    {
+      "finding_id": "118340adf499cd40",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:764ad96a8735",
+      "original_span": [
+        2396,
+        2422
+      ],
+      "new_span": [
+        2396,
+        2422
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 26,
+      "new_length": 26
+    },
+    {
+      "finding_id": "93d32791bec9272c",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:b48e7d13c827",
+      "original_span": [
+        413,
+        438
+      ],
+      "new_span": [
+        413,
+        438
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 25,
+      "new_length": 25
+    },
+    {
+      "finding_id": "f27fef286d5f96d8",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "079622268e436e9a",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "9932cb9393e3d1b3",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:6",
+      "original_span": [
+        326,
+        341
+      ],
+      "new_span": [
+        326,
+        364
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 38
+    },
+    {
+      "finding_id": "bfa3130812407866",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "8c21e07474a93707",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "ece5b4c05449d975",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "8ac48ce7922503d0",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "8541f19e88ffb36e",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "ff35ca04e856a0df",
+      "pointer": "/steps/19/llm/messages_in/3/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "a62223772bf9a944",
+      "pointer": "/steps/19/llm/messages_in/8/content",
+      "token_id": "INTERNAL_TOPOLOGY:18",
+      "original_span": [
+        260,
+        274
+      ],
+      "new_span": [
+        260,
+        291
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 14,
+      "new_length": 31
+    },
+    {
+      "finding_id": "3408bd42b382d122",
+      "pointer": "/steps/19/llm/messages_in/8/content",
+      "token_id": "SECRET_DSN_PASSWORD:17",
+      "original_span": [
+        250,
+        259
+      ],
+      "new_span": [
+        250,
+        283
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 9,
+      "new_length": 33
+    },
+    {
+      "finding_id": "7149c83a9d8164a2",
+      "pointer": "/steps/19/llm/messages_in/8/content",
+      "token_id": "INTERNAL_TOPOLOGY:17",
+      "original_span": [
+        160,
+        169
+      ],
+      "new_span": [
+        160,
+        191
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 31
+    },
+    {
+      "finding_id": "c4bb6ca45046cab7",
+      "pointer": "/steps/19/llm/messages_in/8/content",
+      "token_id": "SECRET_DSN_PASSWORD:16",
+      "original_span": [
+        144,
+        159
+      ],
+      "new_span": [
+        144,
+        177
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 33
+    },
+    {
+      "finding_id": "3444847957da23b8",
+      "pointer": "/steps/21/tool/result",
+      "token_id": "SECRET_ENTROPIC_TOKEN:c9d7602f3c08",
+      "original_span": [
+        294,
+        334
+      ],
+      "new_span": [
+        294,
+        334
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "b550b5fe45389c7f",
+      "pointer": "/steps/22/tool/result",
+      "token_id": "PII_EMAIL:e4009f09d6fb",
+      "original_span": [
+        993,
+        1022
+      ],
+      "new_span": [
+        993,
+        1022
+      ],
+      "type": "PII_EMAIL",
+      "original_length": 29,
+      "new_length": 29
+    },
+    {
+      "finding_id": "ea565c9805b13ba3",
+      "pointer": "/steps/22/tool/result",
+      "token_id": "PII_EMAIL:7e1a6544b025",
+      "original_span": [
+        906,
+        929
+      ],
+      "new_span": [
+        906,
+        929
+      ],
+      "type": "PII_EMAIL",
+      "original_length": 23,
+      "new_length": 23
+    },
+    {
+      "finding_id": "1b9ef768ec9ddaa3",
+      "pointer": "/steps/22/tool/result",
+      "token_id": "PII_EMAIL:2",
+      "original_span": [
+        824,
+        848
+      ],
+      "new_span": [
+        824,
+        846
+      ],
+      "type": "PII_EMAIL",
+      "original_length": 24,
+      "new_length": 22
+    },
+    {
+      "finding_id": "bc691752c1bdb731",
+      "pointer": "/steps/22/tool/result",
+      "token_id": "PII_EMAIL:1",
+      "original_span": [
+        735,
+        759
+      ],
+      "new_span": [
+        735,
+        757
+      ],
+      "type": "PII_EMAIL",
+      "original_length": 24,
+      "new_length": 22
+    },
+    {
+      "finding_id": "45002d769a500476",
+      "pointer": "/steps/23/llm/completion",
+      "token_id": "INTERNAL_TOPOLOGY:20",
+      "original_span": [
+        2115,
+        2129
+      ],
+      "new_span": [
+        2115,
+        2146
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 14,
+      "new_length": 31
+    },
+    {
+      "finding_id": "0e0d580dc3fc4f66",
+      "pointer": "/steps/23/llm/completion",
+      "token_id": "SECRET_DSN_PASSWORD:18",
+      "original_span": [
+        2105,
+        2114
+      ],
+      "new_span": [
+        2105,
+        2138
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 9,
+      "new_length": 33
+    },
+    {
+      "finding_id": "00fc9038f9706e2b",
+      "pointer": "/steps/23/llm/completion",
+      "token_id": "INTERNAL_TOPOLOGY:19",
+      "original_span": [
+        2029,
+        2038
+      ],
+      "new_span": [
+        2029,
+        2060
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 31
+    },
+    {
+      "finding_id": "af09970cb6502d6f",
+      "pointer": "/steps/23/llm/messages_in/10/content",
+      "token_id": "INTERNAL_TOPOLOGY:830853eb2ff0",
+      "original_span": [
+        183,
+        217
+      ],
+      "new_span": [
+        183,
+        217
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 34,
+      "new_length": 34
+    },
+    {
+      "finding_id": "8b3c9e0002e890b1",
+      "pointer": "/steps/23/llm/messages_in/11/content",
+      "token_id": "INTERNAL_TOPOLOGY:5cb18ac9b956",
+      "original_span": [
+        295,
+        319
+      ],
+      "new_span": [
+        295,
+        319
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 24,
+      "new_length": 24
+    },
+    {
+      "finding_id": "ff368a22c4176bf7",
+      "pointer": "/steps/23/llm/messages_in/11/content",
+      "token_id": "INTERNAL_TOPOLOGY:21",
+      "original_span": [
+        255,
+        264
+      ],
+      "new_span": [
+        255,
+        286
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 31
+    },
+    {
+      "finding_id": "77f995242c941ffc",
+      "pointer": "/steps/23/llm/messages_in/11/content",
+      "token_id": "SECRET_DSN_PASSWORD:19",
+      "original_span": [
+        239,
+        254
+      ],
+      "new_span": [
+        239,
+        272
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 33
+    },
+    {
+      "finding_id": "d300d51eff960e54",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "INTERNAL_TOPOLOGY:22",
+      "original_span": [
+        562,
+        575
+      ],
+      "new_span": [
+        562,
+        593
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "57376a681a02d236",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_DSN_PASSWORD:20",
+      "original_span": [
+        549,
+        561
+      ],
+      "new_span": [
+        549,
+        582
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 33
+    },
+    {
+      "finding_id": "a5e14751d717562b",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        493,
+        525
+      ],
+      "new_span": [
+        493,
+        525
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "901de2955a5efbcb",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        493,
+        525
+      ],
+      "new_span": [
+        493,
+        525
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "5587a38b3c72cea5",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        441,
+        481
+      ],
+      "new_span": [
+        441,
+        481
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "eed6bdde6531195e",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        441,
+        481
+      ],
+      "new_span": [
+        441,
+        481
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "373d0b98b3a3af27",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        398,
+        418
+      ],
+      "new_span": [
+        398,
+        418
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "5e40bf47563bc3e5",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        398,
+        418
+      ],
+      "new_span": [
+        398,
+        418
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "94496a5a1a0dd790",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:7",
+      "original_span": [
+        364,
+        379
+      ],
+      "new_span": [
+        364,
+        402
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 38
+    },
+    {
+      "finding_id": "1bae1a1049da74b1",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        316,
+        351
+      ],
+      "new_span": [
+        316,
+        351
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "f4f51bd55d4a6702",
+      "pointer": "/steps/23/llm/messages_in/13/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        316,
+        351
+      ],
+      "new_span": [
+        316,
+        351
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "cc44c0e8c4012892",
+      "pointer": "/steps/23/llm/messages_in/16/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:c9d7602f3c08",
+      "original_span": [
+        294,
+        334
+      ],
+      "new_span": [
+        294,
+        334
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "7806420a20148979",
+      "pointer": "/steps/23/llm/messages_in/17/content",
+      "token_id": "PII_EMAIL:e4009f09d6fb",
+      "original_span": [
+        993,
+        1022
+      ],
+      "new_span": [
+        993,
+        1022
+      ],
+      "type": "PII_EMAIL",
+      "original_length": 29,
+      "new_length": 29
+    },
+    {
+      "finding_id": "fd3338f47531d73c",
+      "pointer": "/steps/23/llm/messages_in/17/content",
+      "token_id": "PII_EMAIL:7e1a6544b025",
+      "original_span": [
+        906,
+        929
+      ],
+      "new_span": [
+        906,
+        929
+      ],
+      "type": "PII_EMAIL",
+      "original_length": 23,
+      "new_length": 23
+    },
+    {
+      "finding_id": "270dffc6f859ff6f",
+      "pointer": "/steps/23/llm/messages_in/17/content",
+      "token_id": "PII_EMAIL:4",
+      "original_span": [
+        824,
+        848
+      ],
+      "new_span": [
+        824,
+        846
+      ],
+      "type": "PII_EMAIL",
+      "original_length": 24,
+      "new_length": 22
+    },
+    {
+      "finding_id": "d02e4b25504f3263",
+      "pointer": "/steps/23/llm/messages_in/17/content",
+      "token_id": "PII_EMAIL:3",
+      "original_span": [
+        735,
+        759
+      ],
+      "new_span": [
+        735,
+        757
+      ],
+      "type": "PII_EMAIL",
+      "original_length": 24,
+      "new_length": 22
+    },
+    {
+      "finding_id": "35593067888529b1",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:23",
+      "original_span": [
+        2459,
+        2472
+      ],
+      "new_span": [
+        2459,
+        2490
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "f2b0f85e429cc5cd",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_DSN_PASSWORD:21",
+      "original_span": [
+        2446,
+        2458
+      ],
+      "new_span": [
+        2446,
+        2479
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 33
+    },
+    {
+      "finding_id": "bc91d03c2881d399",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:764ad96a8735",
+      "original_span": [
+        2396,
+        2422
+      ],
+      "new_span": [
+        2396,
+        2422
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 26,
+      "new_length": 26
+    },
+    {
+      "finding_id": "f51f3ac55ba14178",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:b48e7d13c827",
+      "original_span": [
+        413,
+        438
+      ],
+      "new_span": [
+        413,
+        438
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 25,
+      "new_length": 25
+    },
+    {
+      "finding_id": "6d972ca667f30abc",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "6ac42ab6aff135bb",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "e1ff4fa20c22dcfa",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8",
+      "original_span": [
+        326,
+        341
+      ],
+      "new_span": [
+        326,
+        364
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 38
+    },
+    {
+      "finding_id": "de39aaf6be1b776b",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "44b70d2f02f8b242",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "430d63d008696f75",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "2305ba482d218511",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "7975dc9e2bb2b835",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "c1a0254cc5c7aa80",
+      "pointer": "/steps/23/llm/messages_in/3/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "3bc4cef12a37319d",
+      "pointer": "/steps/23/llm/messages_in/8/content",
+      "token_id": "INTERNAL_TOPOLOGY:25",
+      "original_span": [
+        260,
+        274
+      ],
+      "new_span": [
+        260,
+        291
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 14,
+      "new_length": 31
+    },
+    {
+      "finding_id": "e789a460af6f1d89",
+      "pointer": "/steps/23/llm/messages_in/8/content",
+      "token_id": "SECRET_DSN_PASSWORD:23",
+      "original_span": [
+        250,
+        259
+      ],
+      "new_span": [
+        250,
+        283
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 9,
+      "new_length": 33
+    },
+    {
+      "finding_id": "03c9e42b992b07b1",
+      "pointer": "/steps/23/llm/messages_in/8/content",
+      "token_id": "INTERNAL_TOPOLOGY:24",
+      "original_span": [
+        160,
+        169
+      ],
+      "new_span": [
+        160,
+        191
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 31
+    },
+    {
+      "finding_id": "9d31a1c446db4954",
+      "pointer": "/steps/23/llm/messages_in/8/content",
+      "token_id": "SECRET_DSN_PASSWORD:22",
+      "original_span": [
+        144,
+        159
+      ],
+      "new_span": [
+        144,
+        177
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 15,
+      "new_length": 33
+    },
+    {
+      "finding_id": "66d862471d445761",
+      "pointer": "/steps/25/state_delta/final_answer",
+      "token_id": "INTERNAL_TOPOLOGY:27",
+      "original_span": [
+        2115,
+        2129
+      ],
+      "new_span": [
+        2115,
+        2146
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 14,
+      "new_length": 31
+    },
+    {
+      "finding_id": "f5fb3b3af308b6b1",
+      "pointer": "/steps/25/state_delta/final_answer",
+      "token_id": "SECRET_DSN_PASSWORD:24",
+      "original_span": [
+        2105,
+        2114
+      ],
+      "new_span": [
+        2105,
+        2138
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 9,
+      "new_length": 33
+    },
+    {
+      "finding_id": "a59237fa58a13206",
+      "pointer": "/steps/25/state_delta/final_answer",
+      "token_id": "INTERNAL_TOPOLOGY:26",
+      "original_span": [
+        2029,
+        2038
+      ],
+      "new_span": [
+        2029,
+        2060
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 9,
+      "new_length": 31
+    },
+    {
+      "finding_id": "bff1bb6723fdcf27",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "INTERNAL_TOPOLOGY:28",
+      "original_span": [
+        2459,
+        2472
+      ],
+      "new_span": [
+        2459,
+        2490
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "7c4ad2b33287fdd7",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_DSN_PASSWORD:25",
+      "original_span": [
+        2446,
+        2458
+      ],
+      "new_span": [
+        2446,
+        2479
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 33
+    },
+    {
+      "finding_id": "61bb08258dab6be6",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:764ad96a8735",
+      "original_span": [
+        2396,
+        2422
+      ],
+      "new_span": [
+        2396,
+        2422
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 26,
+      "new_length": 26
+    },
+    {
+      "finding_id": "52876e670ce4d46a",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "INTERNAL_TOPOLOGY:b48e7d13c827",
+      "original_span": [
+        413,
+        438
+      ],
+      "new_span": [
+        413,
+        438
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 25,
+      "new_length": 25
+    },
+    {
+      "finding_id": "a4fa6d3f191c94ac",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "e89230ebc8b5f496",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "ff45e76bea5d95f3",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:9",
+      "original_span": [
+        326,
+        341
+      ],
+      "new_span": [
+        326,
+        364
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 38
+    },
+    {
+      "finding_id": "943cd4652630d4a1",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "6dfd696ffe3cc5fd",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "a173f381dcf563e8",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "124641bed87eeb4b",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "7e229a4b9de83782",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "597fa9f856b6f7ac",
+      "pointer": "/steps/3/tool/result",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "f2f0445e837969f0",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:29",
+      "original_span": [
+        2459,
+        2472
+      ],
+      "new_span": [
+        2459,
+        2490
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "112677739426fa94",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_DSN_PASSWORD:26",
+      "original_span": [
+        2446,
+        2458
+      ],
+      "new_span": [
+        2446,
+        2479
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 33
+    },
+    {
+      "finding_id": "edeacec445378008",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:764ad96a8735",
+      "original_span": [
+        2396,
+        2422
+      ],
+      "new_span": [
+        2396,
+        2422
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 26,
+      "new_length": 26
+    },
+    {
+      "finding_id": "e289b3685b7aebf9",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:b48e7d13c827",
+      "original_span": [
+        413,
+        438
+      ],
+      "new_span": [
+        413,
+        438
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 25,
+      "new_length": 25
+    },
+    {
+      "finding_id": "06970d594f679ec9",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "4bea767a9fa24d36",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "99f78f78f24fa21e",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:10",
+      "original_span": [
+        326,
+        341
+      ],
+      "new_span": [
+        326,
+        365
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 39
+    },
+    {
+      "finding_id": "a2b53d3d14342500",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "7efa6f96f50fa6e3",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "2a7216a8f0fb69dc",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "52ba52cac5944c6b",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "a7f9b5eb83602878",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "5279a7fed591294e",
+      "pointer": "/steps/4/llm/messages_in/3/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "e352a481879e1e36",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:30",
+      "original_span": [
+        2459,
+        2472
+      ],
+      "new_span": [
+        2459,
+        2490
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 13,
+      "new_length": 31
+    },
+    {
+      "finding_id": "04cc4f2ea30e948e",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_DSN_PASSWORD:27",
+      "original_span": [
+        2446,
+        2458
+      ],
+      "new_span": [
+        2446,
+        2479
+      ],
+      "type": "SECRET_DSN_PASSWORD",
+      "original_length": 12,
+      "new_length": 33
+    },
+    {
+      "finding_id": "13fc46539a83af19",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:764ad96a8735",
+      "original_span": [
+        2396,
+        2422
+      ],
+      "new_span": [
+        2396,
+        2422
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 26,
+      "new_length": 26
+    },
+    {
+      "finding_id": "545c09210420b2b1",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "INTERNAL_TOPOLOGY:b48e7d13c827",
+      "original_span": [
+        413,
+        438
+      ],
+      "new_span": [
+        413,
+        438
+      ],
+      "type": "INTERNAL_TOPOLOGY",
+      "original_length": 25,
+      "new_length": 25
+    },
+    {
+      "finding_id": "cdf38caf4d66eb40",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_API_KEY:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_API_KEY",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "bcad4f57c96723a1",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:8b1c9fe53aa6",
+      "original_span": [
+        359,
+        394
+      ],
+      "new_span": [
+        359,
+        394
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 35,
+      "new_length": 35
+    },
+    {
+      "finding_id": "abd0c9f3e8c36bc1",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:11",
+      "original_span": [
+        326,
+        341
+      ],
+      "new_span": [
+        326,
+        365
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 15,
+      "new_length": 39
+    },
+    {
+      "finding_id": "755b9a7bbb3ee04f",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "67c70eb075a7b6bb",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:a0f97dbf7054",
+      "original_span": [
+        124,
+        164
+      ],
+      "new_span": [
+        124,
+        164
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 40,
+      "new_length": 40
+    },
+    {
+      "finding_id": "dec05a2245dba0f5",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_CLOUD_CREDENTIAL:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_CLOUD_CREDENTIAL",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "8380799286f60825",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:f16f26f67a42",
+      "original_span": [
+        81,
+        101
+      ],
+      "new_span": [
+        81,
+        101
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 20,
+      "new_length": 20
+    },
+    {
+      "finding_id": "fa4c5b37f4f2ff2c",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_GENERIC_ASSIGNMENT:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_GENERIC_ASSIGNMENT",
+      "original_length": 32,
+      "new_length": 32
+    },
+    {
+      "finding_id": "ade2f0f3d48f6f43",
+      "pointer": "/steps/7/llm/messages_in/3/content",
+      "token_id": "SECRET_ENTROPIC_TOKEN:481a46badb8f",
+      "original_span": [
+        30,
+        62
+      ],
+      "new_span": [
+        30,
+        62
+      ],
+      "type": "SECRET_ENTROPIC_TOKEN",
+      "original_length": 32,
+      "new_length": 32
+    }
+  ],
+  "mode": "redacted"
+}

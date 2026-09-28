@@ -1,0 +1,6 @@
+{
+  "count": 2724,
+  "merkle_root": "0d93a9ea3108cfddffcda6314d8dc3bb0d6c29f9a15050939d69f458e246c106",
+  "anchored_at": "2026-09-28T06:20:33Z",
+  "note": "detects tampering by a writer without anchor access; not a defence against one with it"
+}
